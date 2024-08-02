@@ -63,31 +63,36 @@ export default function Container() {
     );
   }
   return (
-    <div className='container'>
-      <div className='container2'>
-        <div className='daily-weekly'>
-          <div className='report'>
-            <img src={image} />
-            <div className='reportfor-name'>
-              <span className='reportfor'>Report for</span>
-              <label className='name'>Jeremy Robson</label>
+    <div className='grid-container'>
+      <div className='container'>
+        <div className='container2'>
+          <div className='daily-weekly'>
+            <div className='report'>
+              <img src={image} />
+              <div className='reportfor-name'>
+                <span className='reportfor'>Report for</span>
+                <label className='name'>Jeremy Robson</label>
+              </div>
             </div>
+            <ul className='list'>
+              <li onClick={() => handleViewChange("daily")} className='daily'>
+                Daily
+              </li>
+              <li onClick={() => handleViewChange("weekly")} className='weekly'>
+                Weekly
+              </li>
+              <li
+                onClick={() => handleViewChange("monthly")}
+                className='monthly'
+              >
+                Monthly
+              </li>
+            </ul>
           </div>
-          <ul className='list'>
-            <li onClick={() => handleViewChange("daily")} className='daily'>
-              Daily
-            </li>
-            <li onClick={() => handleViewChange("weekly")} className='weekly'>
-              Weekly
-            </li>
-            <li onClick={() => handleViewChange("monthly")} className='monthly'>
-              Monthly
-            </li>
-          </ul>
         </div>
-      </div>
 
-      <div className='container3'>{handleDaily(viewMode)}</div>
+        <div className='container3'>{handleDaily(viewMode)}</div>
+      </div>
     </div>
   );
 }
