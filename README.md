@@ -2,6 +2,8 @@
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
+Preview Live:  https://olaniyan18.github.io/TimeTrackingDashboard/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
